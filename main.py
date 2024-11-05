@@ -61,7 +61,7 @@ async def answer_questions(
 
     # Step 3: Prepare LangChain components with OpenAIEmbeddings
     try:
-        openai_api_key = "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"
+        openai_api_key = None # Insert your open api key
         embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
         text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
         texts = text_splitter.split_text(document_text)
